@@ -1,0 +1,45 @@
+query getAllTrips {
+  allTrips {
+    ...tripFields
+  }
+}
+
+query findTrips($search: String!) {
+  findTrips(searchFor: $search) {
+    ...tripFields
+  }
+}
+
+fragment planFields on Plan {
+  id
+  title
+  startTime
+  priority
+  duration
+  creationTime
+}
+
+fragment tripFields on Trip {
+  ...planFields
+  plans {
+    ...planFields
+    ... on Flight {
+      airlineCode
+      flightNumber
+      departingAirport
+      arrivingAirport
+    }
+    ... on Lodging {
+      address
+    }
+  }
+  notes {
+    ... on Comment {
+      text
+    }
+    ... on Link {
+      url
+      title
+    }
+  }
+}

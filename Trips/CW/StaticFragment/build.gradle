@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.apollographql.apollo:gradle-plugin:0.3.2'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}

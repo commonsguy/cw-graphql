@@ -1,0 +1,14 @@
+query getAllTrips {
+  allTrips {
+    ...commonFields
+    startTime
+    priority
+    duration
+    creationTime
+  }
+}
+
+fragment commonFields on Plan {
+  id
+  title
+}

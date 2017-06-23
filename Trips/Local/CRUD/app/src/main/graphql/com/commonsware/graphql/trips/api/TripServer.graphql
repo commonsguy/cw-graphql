@@ -1,0 +1,26 @@
+query getAllTrips {
+  allTrips {
+    ...tripFields
+  }
+}
+
+query findTrips($search: String!) {
+  findTrips(searchFor: $search) {
+    ...tripFields
+  }
+}
+
+fragment tripFields on Trip {
+  id
+  title
+  startTime
+  priority
+  duration
+  creationTime
+}
+
+mutation createTrip($trip: TripInput!) {
+  createTrip(trip: $trip) {
+    id
+  }
+}

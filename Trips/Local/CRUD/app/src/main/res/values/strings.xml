@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CRUD Demo</string>
+    <string name="done">Done!</string>
+    <string name="menu_search">Search</string>
+    <string name="title_prefix_search">"Search results for: "</string>
+    <string name="menu_add">Add</string>
+    <string name="hint_title">Title</string>
+    <string name="label_priority">Priority:</string>
+    <string name="label_pick_trip_date_range">Pick Trip Date Range</string>
+    <string name="label_save">Save</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="msg_created">Created!</string>
+</resources>

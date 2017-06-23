@@ -1,0 +1,20 @@
+query getAllTrips {
+  result: allTrips {
+    ...tripFields
+  }
+}
+
+query findTrips($search: String!) {
+  result: findTrips(searchFor: $search) {
+    ...tripFields
+  }
+}
+
+fragment tripFields on Trip {
+  id
+  displayName: title
+  startTime
+  priority
+  duration
+  creationTime
+}

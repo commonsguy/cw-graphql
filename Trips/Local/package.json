@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2",
+    "graphql-errors": "2.1.0",
+    "graphql-tools": "^1.0.0",
+    "uuid": "^3.0.1"
+  }
+}
