@@ -1,7 +1,9 @@
 ## About the Book
 
-[GraphQL and Android](https://commonsware.com/GraphQL) is a book covering Android application development, from basics
-through advanced capabilities. It is updated several times a year and is available through
+[GraphQL and Android](https://commonsware.com/GraphQL) is a book covering 
+what [GraphQL](http://graphql.org/) is, how to consume GraphQL-powered Web
+services from Android apps, and related topics.
+The book is updated several times a year and is available through
 [the Warescription](https://commonsware.com/warescription) program. Subscribers also have access to office
 hours chats and other benefits.
 
