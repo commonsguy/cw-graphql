@@ -46,7 +46,7 @@ public class SimpleTripsFragment extends Fragment {
   private static final String DOCUMENT=
     "{ allTrips { id title startTime priority duration creationTime } }";
   private static final String ENDPOINT=
-    "https://graphql-demo.commonsware.com/0.1/graphql";
+    "https://graphql-demo.commonsware.com/0.2/graphql";
   private Observable<String> observable;
   private Disposable sub;
 

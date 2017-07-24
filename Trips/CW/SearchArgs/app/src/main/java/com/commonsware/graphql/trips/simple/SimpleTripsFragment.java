@@ -69,7 +69,7 @@ public class SimpleTripsFragment extends RecyclerViewFragment
   private static final String SEARCH_DOCUMENT=
     "{ findTrips(searchFor: \"%s\") { id title startTime priority duration creationTime } }";
   private static final String ENDPOINT=
-    "https://graphql-demo.commonsware.com/0.1/graphql";
+    "https://graphql-demo.commonsware.com/0.2/graphql";
   private Observable<GraphQLResponse> observable;
   private Disposable sub;
   private SearchView sv;
