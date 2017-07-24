@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.apollographql.android'
+
+dependencies {
+  compile 'io.reactivex.rxjava2:rxjava:2.0.2'
+  compile 'io.reactivex.rxjava2:rxandroid:2.0.0'
+  compile 'com.android.support:recyclerview-v7:25.4.0'
+  compile 'com.apollographql.apollo:apollo-rx2-support:0.3.3'
+  compile 'com.squareup.okhttp3:okhttp:3.8.1'
+  androidTestCompile 'com.android.support.test:rules:0.5'
+  androidTestCompile "com.android.support:support-annotations:25.4.0"
+  androidTestCompile "org.mockito:mockito-core:1.10.19"
+  androidTestCompile "com.crittercism.dexmaker:dexmaker:1.4"
+  androidTestCompile "com.crittercism.dexmaker:dexmaker-mockito:1.4"
+  androidTestCompile "com.crittercism.dexmaker:dexmaker-dx:1.4"
+  androidTestCompile 'com.squareup.okhttp3:mockwebserver:3.8.1'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+	  defaultConfig {
+        minSdkVersion 15
+		    targetSdkVersion 25
+        applicationId "com.commonsware.graphql.trips.simple.statictest"
+
+        jackOptions {
+            enabled true
+        }
+
+        testApplicationId "com.commonsware.graphql.trips.simple.statictest.test"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+	 }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}

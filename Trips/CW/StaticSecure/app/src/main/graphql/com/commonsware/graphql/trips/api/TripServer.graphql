@@ -1,0 +1,11 @@
+query getAllTrips {
+  allTrips {
+    id
+    title
+    startTime
+    priority
+    duration
+    creationTime
+  }
+}
+
