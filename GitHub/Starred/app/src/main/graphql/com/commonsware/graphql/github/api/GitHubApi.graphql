@@ -1,0 +1,17 @@
+query myStars($first: Int, $after: String) {
+  viewer {
+    login
+    starredRepositories(first: $first, after: $after, orderBy: {field: STARRED_AT, direction: DESC}) {
+      edges {
+        cursor
+        node {
+          id
+          name
+        }
+      }
+      pageInfo {
+        hasNextPage
+      }
+    }
+  }
+}
