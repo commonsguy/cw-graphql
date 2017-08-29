@@ -66,7 +66,7 @@ public class SimpleTripsFragment extends RecyclerViewFragment {
       OkHttp3Integrator.applyTo(tmb, okb);
       ApolloClient apolloClient=ApolloClient.builder()
         .okHttpClient(okb.build())
-        .serverUrl("https://graphql-demo.commonsware.com/0.2/graphql")
+        .serverUrl("https://graphql-demo.commonsware.com/0.3/graphql")
         .build();
 
       observable=Rx2Apollo.from(apolloClient.query(new GetAllTrips()).watcher())

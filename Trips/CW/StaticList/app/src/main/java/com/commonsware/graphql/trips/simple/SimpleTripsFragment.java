@@ -46,7 +46,7 @@ public class SimpleTripsFragment extends RecyclerViewFragment {
     new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
   private ApolloClient apolloClient=ApolloClient.builder()
     .okHttpClient(new OkHttpClient())
-    .serverUrl("https://graphql-demo.commonsware.com/0.2/graphql")
+    .serverUrl("https://graphql-demo.commonsware.com/0.3/graphql")
     .build();
   private Observable<GetAllTrips.Data> observable;
   private Disposable sub;

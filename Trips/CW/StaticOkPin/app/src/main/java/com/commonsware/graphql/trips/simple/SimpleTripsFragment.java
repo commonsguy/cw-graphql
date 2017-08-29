@@ -52,7 +52,7 @@ public class SimpleTripsFragment extends RecyclerViewFragment {
     .build();
   private ApolloClient apolloClient=ApolloClient.builder()
     .okHttpClient(ok)
-    .serverUrl("https://graphql-demo.commonsware.com/0.2/graphql")
+    .serverUrl("https://graphql-demo.commonsware.com/0.3/graphql")
     .build();
   private Observable<GetAllTrips.Data> observable;
   private Disposable sub;

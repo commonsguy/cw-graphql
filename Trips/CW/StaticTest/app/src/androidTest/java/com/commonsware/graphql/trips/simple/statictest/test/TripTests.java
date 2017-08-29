@@ -65,7 +65,7 @@ public class TripTests {
   public void realServer() throws InterruptedException {
     ApolloClient apolloClient=ApolloClient.builder()
       .okHttpClient(new OkHttpClient())
-      .serverUrl("https://graphql-demo.commonsware.com/0.2/graphql")
+      .serverUrl("https://graphql-demo.commonsware.com/0.3/graphql")
       .build();
 
     assertResponse(Rx2Apollo.from(apolloClient.query(new GetAllTrips()).watcher())
@@ -102,7 +102,7 @@ public class TripTests {
     server.start();
 
     try {
-      HttpUrl url=server.url("/0.2/graphql");
+      HttpUrl url=server.url("/0.3/graphql");
       ApolloClient apolloClient=ApolloClient.builder()
         .okHttpClient(new OkHttpClient())
         .serverUrl(url.toString())

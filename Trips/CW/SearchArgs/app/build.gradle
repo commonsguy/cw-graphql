@@ -5,16 +5,16 @@ dependencies {
   compile 'com.google.code.gson:gson:2.7'
   compile 'io.reactivex.rxjava2:rxjava:2.0.2'
   compile 'io.reactivex.rxjava2:rxandroid:2.0.0'
-  compile 'com.android.support:recyclerview-v7:25.3.1'
+  compile 'com.android.support:recyclerview-v7:26.0.1'
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
 
 	  defaultConfig {
         minSdkVersion 15
-		    targetSdkVersion 25
+		    targetSdkVersion 26
         applicationId "com.commonsware.graphql.trips.simple.searchargs"
 
         jackOptions {
