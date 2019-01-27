@@ -50,10 +50,10 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import static android.app.SearchManager.QUERY;
 
 public class SimpleTripsFragment extends RecyclerViewFragment
   implements SearchView.OnQueryTextListener, SearchView.OnCloseListener {
+  private static final String QUERY="query";
   private static final MediaType MEDIA_TYPE_JSON
     =MediaType.parse("application/json; charset=utf-8");
   private static final String ARG_SEARCH="search";
